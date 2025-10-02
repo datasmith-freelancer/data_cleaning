@@ -1,43 +1,50 @@
-# Data Cleaning Practice Notebook
+# Data Cleaning Project – Café Sales Dataset  
 
-Hello Recruiter,
+Hi! 👋  
 
-This Jupyter Notebook demonstrates my hands-on skills in data cleaning using pandas, based on a real-world café sales dataset. I created this notebook to practice and showcase my ability to handle messy data and prepare it for further analysis or machine learning tasks.
+I built this project to demonstrate my **data cleaning skills** using Python and Pandas.  
+The dataset I worked with (`dirty_cafe_sales.csv`) contained a variety of **realistic data quality issues**: missing values, inconsistent formats, wrong labels, and even logically incorrect records.  
 
-## What I Did
+---
 
-- **Robust Data Import:**
-	- I implemented error handling when loading the `dirty_cafe_sales.csv` file, covering cases like missing files, empty files, and parsing errors.
+## What I Did  
 
-- **Data Exploration:**
-	- I displayed the first 5 rows and 100 random rows to get a feel for the dataset.
-	- I counted missing values per column and listed all rows with at least one missing value.
+- **Data Inspection & Exploration**  
+  - Loaded the dataset safely with proper error handling.  
+  - Explored the data with `.head()`, `.info()`, `.describe()`, and random sampling to understand its structure and problems.  
+  - Counted missing values and identified incomplete rows.  
 
-- **Data Cleaning:**
-	- I converted non-numeric values in `Quantity`, `Price Per Unit`, and `Total Spent` to numeric, coercing invalid entries to NaN.
-	- I replaced missing values in these columns with 0.
-	- For categorical columns like `Item`, `Payment Method`, `Location`, and `Transaction Date`, I replaced errors and missing values with meaningful placeholders (e.g., "Unknown Item").
-	- I performed plausibility checks to ensure that `Quantity * Price Per Unit` matches `Total Spent`.
+- **Cleaning & Transformation**  
+  - Converted numeric columns (`Quantity`, `Price Per Unit`, `Total Spent`) to the correct type and handled invalid values.  
+  - Recalculated missing numeric fields when possible (e.g., computed `Price Per Unit` from `Total Spent / Quantity`).  
+  - Cleaned categorical columns:  
+    - Replaced invalid entries like `"ERROR"` or `"UNKNOWN"` with sensible defaults.  
+    - Reconstructed product names (`Salad`, `Coffee`, `Tea`) based on price clues.  
+    - Standardized payment methods and locations.  
+  - Fixed and converted transaction dates, ensuring chronological order.  
 
-- **Saving Results:**
-	- I saved the cleaned data as `clean_cafe_sales.csv`.
-	- Rows that failed the plausibility check were saved separately as `transactions_invalid.csv`.
+- **Validation & Reporting**  
+  - Added a plausibility check: verified if `Quantity × Price Per Unit = Total Spent`.  
+  - Flagged and exported invalid transactions separately.  
+  - Generated a cleaning report summarizing all fixes.  
 
-- **Reporting:**
-	- I generated a cleaning report showing how many values were fixed or filled in each column.
+- **Output Files**  
+  - `clean_cafe_sales.csv` → fully cleaned dataset  
+  - `transactions_invalid.csv` → records that failed validation  
 
-## Why This Matters
+---
 
-This notebook demonstrates my ability to systematically identify and fix common data quality issues using pandas. I am comfortable with error handling, data type conversion, missing value imputation, and basic data validation. My workflow is robust and reproducible, making it easy to adapt to new datasets and requirements.
+## Why This Matters  
 
-## Requirements
-- Python 3.x
-- pandas
-- Jupyter Notebook or VS Code with Jupyter support
+This project shows that I can:  
 
-## How to Use
-1. Open the notebook and run the cells step by step.
-2. Follow the outputs and comments to understand each cleaning step.
-3. After completion, you will find the cleaned data in `clean_cafe_sales.csv` and invalid rows in `transactions_invalid.csv`.
+- Handle **dirty, real-world data** and make it usable.  
+- Apply **systematic cleaning strategies** instead of quick fixes.  
+- Ensure **data consistency, correctness, and reliability** before analysis.  
+- Communicate results clearly (both in code and reporting).  
 
-Thank you for reviewing my work!
+As a future **Data Analyst / Data Engineer**, I know that preparing clean, trustworthy data is the foundation for every analysis or machine learning project.  
+
+
+
+✅ With this project, I want to demonstrate to recruiters that I can turn messy data into structured, reliable information — a critical step for any successful data-driven project.  
