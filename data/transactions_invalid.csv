@@ -1,0 +1,19 @@
+Transaction ID,Item,Quantity,Price Per Unit,Total Spent,Payment Method,Location,Transaction Date,Check_Total_OK
+TXN_9289174,Cake,0.0,0.0,12.0,Digital Wallet,In-store,2023-12-30,False
+TXN_1575608,Sandwich,0.0,0.0,20.0,Unknown,Takeaway,2023-01-05,False
+TXN_7225428,Tea,0.0,0.0,3.0,Credit Card,Takeaway,2023-03-07,False
+TXN_7590801,Tea,0.0,0.0,6.0,Cash,Takeaway,Unknown Date,False
+TXN_3593060,Smoothie,0.0,0.0,16.0,Cash,Unknown,2023-03-05,False
+TXN_3849488,Salad,0.0,0.0,5.0,Unknown,In-store,2023-03-01,False
+TXN_6177081,Cookie,0.0,0.0,1.0,Cash,Unknown,2023-07-26,False
+TXN_7376255,Unknown Item,0.0,0.0,25.0,Unknown,In-store,2023-05-27,False
+TXN_6206792,Tea,0.0,0.0,6.0,Credit Card,Unknown,2023-10-13,False
+TXN_8388462,Smoothie,0.0,0.0,8.0,Unknown,Takeaway,2023-08-19,False
+TXN_6859249,Cookie,0.0,0.0,2.0,Unknown,Unknown,Unknown Date,False
+TXN_5308047,Cookie,0.0,0.0,1.0,Credit Card,Unknown,2023-10-28,False
+TXN_3071092,Coffee,0.0,0.0,4.0,Unknown,Unknown,2023-09-08,False
+TXN_1082717,Unknown Item,0.0,0.0,9.0,Digital Wallet,In-store,2023-12-13,False
+TXN_7764304,Cake,0.0,0.0,3.0,Credit Card,Takeaway,2023-01-09,False
+TXN_8077367,Tea,0.0,0.0,7.5,Credit Card,Unknown,2023-02-27,False
+TXN_5744797,Cake,0.0,0.0,3.0,Cash,In-store,2023-12-20,False
+TXN_1208561,Unknown Item,0.0,0.0,20.0,Credit Card,Unknown,2023-08-19,False
